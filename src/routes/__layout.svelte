@@ -4,5 +4,7 @@
 </script>
 
 <AppSettings>
-    <slot/>
+    <div class="prose prose-stone dark:prose-invert prose-headings:underline p-12">
+        <slot/>
+    </div>
 </AppSettings>
