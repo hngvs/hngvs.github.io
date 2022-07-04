@@ -9,7 +9,10 @@ const config = {
     preprocess: [
         preprocess(),
         mdsvex({
-            extensions: ['.md']
+            extensions: ['.md'],
+            layout: {
+                nets: 'src/routes/nets/_netLayout.svelte'
+            }
         })
     ],
     kit: {
