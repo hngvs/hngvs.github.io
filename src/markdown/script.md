@@ -35,19 +35,22 @@ licenseType.set("HAM")
 }
 </script>
 
-## Net Script
+### Net Script
 
-### Configuration
+#### Configuration
+
 <span class="relative z-0 inline-flex shadow-sm rounded-md">
   <button type="button" on:click={setLicenseTypeGMRS} class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-indigo-500 hover:text-white focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 {$licenseType === "GMRS" || $licenseType === "" ? "bg-indigo-500 text-white" : ""}">GMRS</button>
   <button type="button" on:click={setLicenseTypeHAM} class="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-indigo-500 hover:text-white focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 {$licenseType === "HAM" ? "bg-indigo-500 text-white" : ""}">HAM</button>
 </span>
+
 <div>
   <label for="naturalName" class="block text-sm font-medium text-gray-700">Your Name</label>
   <div class="mt-1">
     <input bind:value={$naturalName} type="text" name="naturalName" id="naturalName" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="{defaultNaturalName}">
   </div>
 </div>
+
 <div>
   <label for="callSign" class="block text-sm font-medium text-gray-700">Station Call Sign</label>
   <div class="mt-1">
@@ -55,7 +58,7 @@ licenseType.set("HAM")
   </div>
 </div>
 
-### Script
+#### Script
 
 Calling the Henderson Nevada Green Valley Stake of The Church of Jesus Christ of Latter-day Saints Emergency
 Communication Net. This is net control station **_
