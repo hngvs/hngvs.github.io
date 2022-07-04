@@ -15,12 +15,12 @@ const timeOptions = {
             minute:'2-digit',
             hour12: false,
         };
-let time = date.toLocaleString('en-US', timeOptions);
+let time = date.toLocaleString('en-US', timeOptions).replace(/:/g,'');
 
 	onMount(() => {
 		const interval = setInterval(() => {
             const date = new Date();
-			time = date.toLocaleString('en-US', timeOptions)
+			time = date.toLocaleString('en-US', timeOptions).replace(/:/g,'')
 		}, 1000);
 
 		return () => {
@@ -100,6 +100,6 @@ Any other questions or comments for the net:
 Late check-ins:
 
 This is **_{$callSign || defaultCallSign}_**, Net Control Station for the Henderson Nevada Green Valley Stake of The Church of Jesus Christ
-of Latter-day Saints, closing the net at **_<span style="text-decoration:underline;">{time}</span>_**. All stations have
+of Latter-day Saints, closing the net at **_{time} hrs_**. All stations have
 permission to close. Good evening and 73s. **_
 {$callSign || defaultCallSign}_**
