@@ -1,4 +1,8 @@
 <script>
     import "../app.css"
+    import AppSettings from "../context/appSettings.svelte"
 </script>
-<slot/>
+
+<AppSettings>
+    <slot/>
+</AppSettings>
