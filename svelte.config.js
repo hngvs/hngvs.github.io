@@ -14,10 +14,6 @@ const config = {
             fallback: null,
             precompress: true
         }),
-        paths: {
-            // change below to your repo name
-            base: dev ? "" : "/hngvs.github.io",
-        },
         prerender: {
             default: true
         },
