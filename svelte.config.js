@@ -14,7 +14,7 @@ const config = {
         }),
         paths: {
             // change below to your repo name
-            base: dev ? "" : "/hngvs.github.io",
+            base: dev ? "" : "/hngvs/hngvs.github.io",
         },
         prerender: {
             default: true
