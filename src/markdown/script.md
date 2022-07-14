@@ -37,6 +37,8 @@ licenseType.set("HAM")
 
 ### Net Script
 
+<div class="print:hidden">  
+
 #### Configuration
 
 <span class="relative z-0 inline-flex shadow-sm rounded-md">
@@ -57,18 +59,26 @@ licenseType.set("HAM")
     <input bind:value={$callSign} type="text" name="callSign" id="callSign" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="{defaultCallSign}">
   </div>
 </div>
+</div>
+
+<div class="print:prose-p:text-sm print:prose-li:text-sm">
+<div class="print:hidden">
 
 #### Script
+
+</div>
 
 Calling the Henderson Nevada Green Valley Stake of The Church of Jesus Christ of Latter-day Saints Emergency
 Communication Net. This is net control station **_
 {$callSign || defaultCallSign},_** and my name is **_{$naturalName || defaultNaturalName}_**.
 
-The purpose of this net is to provide emergency communications training for **_{$licenseType || defaultLicenseType}_** radio operators in the
+The purpose of this net is to provide emergency communications training for **_{$licenseType || defaultLicenseType}_**
+radio operators in the
 Henderson, Nevada Green Valley Stake of The Church of Jesus Christ of Latter-day Saints and to announce activities and
 events of local preparedness organizations.
 
-This net is open to all **_{$licenseType || defaultLicenseType}_** radio operators, and all are encouraged to participate.
+This net is open to all **_{$licenseType || defaultLicenseType}_** radio operators, and all are encouraged to
+participate.
 
 This is a directed net. Please transmit only as directed by the Net Control Station. All stations checking in are asked
 to remain on frequency until released by the Net Control Station. You may request permission to transmit by giving the
@@ -89,20 +99,20 @@ Any stations wishing to check in the net this evening, please call now.
 
 Thank you to all for checking in, and welcome to the net.
 
-This is **_{$callSign || defaultCallSign}_**, Net Control Station for the Henderson Nevada Green Valley Stake of The Church of Jesus Christ
+This is **_{$callSign || defaultCallSign}_**, Net Control Station for the Henderson Nevada Green Valley Stake of The
+Church of Jesus Christ
 of Latter-day Saints.
 
-Announcements:
+- Announcements
+- Stations with traffic
+- Training item
+- Any other questions or comments for the net
+- Late check-ins
 
-Stations with traffic:
-
-Training item:
-
-Any other questions or comments for the net:
-
-Late check-ins:
-
-This is **_{$callSign || defaultCallSign}_**, Net Control Station for the Henderson Nevada Green Valley Stake of The Church of Jesus Christ
+This is **_{$callSign || defaultCallSign}_**, Net Control Station for the Henderson Nevada Green Valley Stake of The
+Church of Jesus Christ
 of Latter-day Saints, closing the net at **_{time} hrs_**. All stations have
 permission to close. Good evening and 73s. **_
 {$callSign || defaultCallSign}_**
+
+</div>
