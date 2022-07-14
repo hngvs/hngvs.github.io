@@ -1,4 +1,4 @@
-<div class="print:prose-sm">
+<div class="print:prose-sm print:prose-li:pl-5">
 
 ### Net Info
 Sundays, 1900 hrs (7:00 pm)
