@@ -26,8 +26,5 @@ If your GMRS radio is pre-configured for GMRS repeaters, you will need to set th
 
 </div>
 
-### Net Manager
-Bret Palsson (N6BEP / WRON589)  
-[bretep@gmail.com](mailto:bretep@gmail.com)
 
 </div>

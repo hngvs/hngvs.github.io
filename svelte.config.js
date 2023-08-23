@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
 import preprocess from 'svelte-preprocess';
 import {mdsvex} from 'mdsvex'
 
@@ -16,16 +16,7 @@ const config = {
         })
     ],
     kit: {
-        adapter: adapter({
-            // default options are shown
-            pages: 'docs',
-            assets: 'docs',
-            fallback: null,
-            precompress: true
-        }),
-        prerender: {
-            default: true
-        },
+        adapter: adapter(),
         vite: {
             server: {
                 open: false,

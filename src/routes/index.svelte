@@ -1,3 +1,35 @@
+<script context="module">
+    import faunadb from 'faunadb';
+
+    const q = faunadb.query;
+
+    const client = new faunadb.Client({
+        secret: 'fnAErv5mr5AARqeqa-1KWldzrX0mCGvMXoSEK4EO',
+        domain: 'db.us.fauna.com',
+        port: 443,
+        scheme: 'https',
+    })
+
+    export async function load({url, fetch}) {
+
+        const data = await client.query(
+            q.Collection('Scores')
+        )
+        console.log('data: ', JSON.stringify(data, null, 2))
+
+        // q.Ref(q.Collection('Scores'), '1')
+
+        // const [{ articles, pages }, { tags }] = await Promise.all([
+        //     fetch(`/articles.json${url.search}`, { credentials: 'include' }).then((r) => r.json()),
+        //     fetch('/tags.json').then((r) => r.json())
+        // ]);
+
+        return {
+            props: {}
+        };
+    }
+</script>
+
 <script>
     import NetInfo from "../markdown/info.md"
     import NetScript from "../markdown/script.md"
